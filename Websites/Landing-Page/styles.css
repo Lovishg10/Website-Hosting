@@ -1,0 +1,539 @@
+/*Here start default settings*/
+:root
+{
+	--main-white: #fff;
+	--main-dark-white: #eee;
+	--secondary-backg: hsl(211, 100%, 41.4%);
+}
+
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
+}
+
+html
+{
+	scroll-behavior: smooth;
+}
+
+body
+{
+	color: var(--main-white);
+}
+
+video
+{
+	display: none;
+}
+
+p
+{
+	line-height: 1.5;
+}
+
+h2
+{
+	letter-spacing: .3rem;
+	font-size: 2rem;
+	padding: 2rem 0;
+	text-align: center;
+	font-weight: 300;
+}
+
+h3
+{
+	text-align: center;
+	font-size: 1.4rem;
+	font-weight: 300;
+}
+
+a
+{
+	outline: none;
+	border: none;
+	color: unset;
+	text-decoration: none;
+}
+
+li
+{
+	list-style: none;
+}
+
+/*Here ends setting default settings*/
+
+/*Header and nav code starts here*/
+
+.first-page-container
+{
+	width: 100%;
+	min-height: 100vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('Images/background.jpg') no-repeat fixed;
+	background-size: cover;
+	overflow: visible;
+}
+
+header
+{
+	margin-bottom: 2rem;
+}
+
+/*I don't want to use a image*/
+header img
+{
+	width: 4rem;
+	display: none;
+}
+
+header > .flex
+{
+	justify-content: space-between;
+}
+
+nav .flex
+{
+	justify-content: space-around;
+}
+
+.header-wrap
+{
+	padding: .5rem 1.5rem;
+}
+
+.header-wrap h1
+{
+	font-size: 2rem;
+}
+
+nav .grid
+{
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-item
+{
+	padding: 1rem 2rem;
+}
+
+nav ul li a
+{
+	margin: 0 .9rem;
+}
+
+nav ul li a:hover
+{
+	border-bottom: 2px solid var(--main-dark-white);
+
+}
+/*Header and nav code ends here*/
+
+/*Code of main-content class starts here*/
+.main-content .grid
+{
+	grid-gap: 0 2rem;
+}
+
+#first-benefit
+{
+	grid-area: first;
+}
+
+#second-benefit
+{
+	grid-area: second;
+}
+
+#third-benefit
+{
+	grid-area: third;
+}
+
+/*Here my form code starts*/
+.form-container
+{
+	background-color: rgba(0, 0, 0, 0.1);
+	padding: 2rem;
+}
+
+.break-wrap
+{
+	margin-bottom: 3rem;
+}
+
+.form-container h3
+{
+	text-align: center;
+	margin-bottom: 2rem;
+	font-family: sans-serif;
+	font-weight: 300;
+}
+
+label
+{
+	margin: 1rem 0;
+	font-size: 1rem;
+}
+
+label[id$='text']
+{
+	display: block;
+}
+
+input
+{
+	font-family: sans-serif;
+	font-weight: 200;
+	padding:.3rem .6rem;
+	font-size: 1.1rem;
+	color: #fff;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid var(--main-dark-white);
+	outline: none;
+}
+
+input[type='email'], input[type='text']
+{
+	width: 100%;
+}
+
+.select-container-wrap
+{
+	position: relative;
+	width: 140px;
+}
+select
+{
+	display: inline-block;
+	font-size: 1rem;
+	background-color: transparent;
+	color: #fff;
+	width: 100%;
+	border: none;
+	border-left: 1px solid var(--main-dark-white);
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	position: relative;
+}
+
+input[type='submit']
+{
+	display: block;
+	padding: 5px 10px;
+	width: 70%;
+	color: var(--main-white);
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid #eee;
+	margin: auto;
+	transition: transform .1s linear;
+}
+
+input[type='submit']:hover, input[type='submit']:active
+{
+	transform: scale(1.1);
+}
+
+input[type='submit']:active
+{
+	background-color: rgba(0, 0, 0, 0.2);
+}
+/*Here my form code ends*/
+/*Code of main-content class ends here*/
+
+/*Here my second-info-page code starts*/
+.second-info-page
+{
+	color: #000;
+}
+
+.second-info-page .grid
+{
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-areas: 'first second third';
+	grid-gap: 2rem;
+}
+
+.benefits-container-wrap .flex
+{
+	flex-direction: column;
+}
+
+.benefit-heading p
+{
+	padding: 1rem 1rem;
+}
+
+img[src $= 'svg']
+{
+	width: 4rem;
+}
+/*Here my second-info-page code ends*/
+
+/*Here my testimonial-page code starts*/
+.testimonial-page
+{
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url('Images/testimonial.jpg') no-repeat;
+	background-size: cover;height: 100vh;
+	width: 100%;
+	height: 100vh;
+}
+
+.testimonial-page-wrap
+{
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+.testimonial-container
+{
+	overflow: auto;
+	width: 70%;
+	height: 60%;
+	margin: 0 auto;
+	border-radius: 2rem;
+	border: 2px solid var(--main-white);
+	background-color: rgba(0, 0, 0, 0.2);
+	position: relative;
+	padding: 3rem;
+}
+
+/*Here my testimonial-page code ends*/
+
+/*Here my footer code starts*/
+footer
+{
+	padding: 3rem 7rem;
+	background-color: #001323;
+}
+
+footer a
+{
+	text-decoration: underline;
+}
+
+footer a:hover
+{
+	text-decoration: none;
+}
+
+footer h4, footer p
+{
+	font-size: 1.1rem;
+	margin: 0 0;
+}
+
+footer p
+{
+	font-size: 1rem;
+	padding-right: 3rem;
+	/*text-align: center;*/
+}
+
+footer .break-link
+{
+	margin: .3rem 0;
+}
+
+footer .grid
+{
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 0rem 4rem;
+}
+
+.footer-website-creator > p
+{
+	margin-bottom: 1rem;
+}
+
+.footer-wrap > .grid
+{
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr;
+}
+
+footer span
+{
+	color: #ddd;
+}
+/*Here my footer code ends*/
+
+/*Styling icons starts*/
+.left-icon, .right-icon
+{
+	font-size: 2.5rem;
+	background-color: transparent;
+	border-radius: 1rem;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	cursor: pointer;
+}
+
+.right-icon
+{
+	right: 0;
+	left: unset;
+}
+
+.left-icon:hover, .right-icon:hover
+{
+	color: #aaa;
+}
+
+i[class = 'fas fa-caret-square-down']
+{
+	background-color: transparent;
+	color: var(--main-white);
+	position: absolute;
+	left: 85%;
+	top: 0;
+	font-size: 1.4rem;
+}
+
+i[class ^= 'fas fa-dollar-sign'],
+i[class ^= 'fas fa-digital-tachograph']
+{
+	color: hsl(230, 50%, 30%);
+	font-size: 4rem;
+}
+/*Styling icons ends*/
+
+/*Utilities*/
+.flex
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.grid
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	height: 100%;
+	grid-gap: .2rem 0;
+	justify-content: center;
+	align-content: center;
+	align-items: center;
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 844px)
+{
+	header .flex
+	{
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.header-wrap h1
+	{
+		padding-bottom: 2rem;
+	}
+
+	.main-content .grid
+	{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media only screen and (max-width: 821px)
+{
+	.second-info-page .grid
+	{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas:'first second'
+		'third third';
+	}
+
+	#third-benefit p
+	{
+		text-align: center;
+	}
+
+	.footer-company-about
+	{
+		grid-area: 'follow';
+	}
+
+	footer .content
+	{
+		grid-area: 'content';
+	}
+
+	.footer-website-creator
+	{
+		grid-area: 'creator';
+		grid-column: 1 / span 2;
+	}
+
+	#designedBy
+	{
+		text-align: center;
+		grid-column: 1 / span 2;
+	}
+
+	#right
+	{
+		text-align: center;
+		grid-area: 'rights';
+		grid-column: 1 / span 2;
+	}
+
+	.footer-company-about .grid
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 'design' 'rights';
+
+	}
+
+	footer .grid
+	{
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		grid-template-areas: 'follow follow'
+		'content content';
+		grid-gap: 1rem 2rem;
+	}
+}
+
+@media only screen and (max-width: 580px)
+{
+	html
+	{
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 440px)
+{
+	.testimonial-container
+	{
+		max-height: 100%;
+		margin-bottom: 2rem;
+		width: 90%;
+	}
+
+	.second-info-page .grid
+	{
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		grid-template-areas:'first'
+		'second'
+		'third';
+	}
+
+	#third-benefit p
+	{
+		text-align: unset;
+	}
+
+}

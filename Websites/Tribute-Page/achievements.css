@@ -1,0 +1,20 @@
+#first-page > .grid
+{
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas:
+	'info figure';
+	grid-gap: 1rem;
+
+}
+
+.info-wrap ul li h4
+{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 2rem;
+}
+
+.info-wrap ul li
+{
+	list-style: disc;
+}
