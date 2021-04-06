@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="styles.css">
+	<title>My Portfolio Website</title>
+</head>
+<body>
+	<header class="">
+		<i class="far fa-window-close" onclick="closeSide(this)" style="display: none;" ></i>
+		<i class="fas fa-bars" onclick="closeSide(this)"></i>
+		<nav>
+			<ul class="flex">
+				<li><a href="#main-page"><i class="fas fa-igloo"></i>Home</a></li>
+				<li><a href="#about-page"><i class="fas fa-address-card"></i>About Me</a></li>
+				<li><a href="#coding-page"><i class="fas fa-code"></i>Coding</a></li>
+				<li><a href="#contact-page"><i class="fas fa-phone-square-alt"></i>Contact Me</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<section id="main-page">
+		<div class="text-typing flex">
+			<h1></h1>
+		</div>
+	</section>
+
+	<section id="about-page">
+		<h1>Lovish Garg</h1>
+		<div class="info-wrap">
+			<table id="about-table">
+				<tr>
+					<th>Name</th>
+					<td>Lovish Garg</td>
+				</tr>
+
+				<tr>
+					<th>D.O.B</th>
+					<td>10<sup>th</sup> August, 2006</td>
+				</tr>
+
+				<tr>
+					<th>Status</th>
+					<td>Studying in 9<sup>th</sup> class in Atam Public Sr. Sec. School</td>
+				</tr>
+
+				<tr>
+					<th>City</th>
+					<td>Ludhiana</td>
+				</tr>
+
+				<tr>
+					<th>State</th>
+					<td>Punjab</td>
+				</tr>
+
+				<tr>
+					<th>Country</th>
+					<td>India <span><img src="https://img.icons8.com/color/20/000000/india.png"></span></td>
+				</tr>
+			</table>
+		</div>
+	</section>
+
+	<section id="coding-page" class="grid">
+		<div class="card">
+			<h3>How did I started Coding?</h3>
+			<div class="container">
+				<p>
+					So I started coding in 2020 during lockdown period and my first language was C and I really loved it and on 1<sup>st</sup>January 2021 I started C++ but then I participated in a online competition and in that I had to build a webpage so I can't explore C++ very much but after that I started frontend but after completing my Javascript and JQuery and when it will appear that I have mastered front-end well, then I will surely re-explore C++ and
+					<abbr title="Data Structures & Algorithms">DSA</abbr> too.
+				</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<h3>What languages I know?</h3>
+			<div class="container">
+				<p>
+					So I know C, C++ , html & css and Js.
+				</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<h3>What more I like?</h3>
+			<div class="container">
+				<p>
+					I like horror films and I also like drawing (specifically sketching).
+				</p>
+			</div>
+		</div>
+
+		<div class="card">
+			<h3>What I want to do?</h3>
+			<div class="container">
+				<p>
+					<q>Don't tell people about your plans, do it and shock everyone and then move to your next project. Keep shocking & keep enjoying.</q>~ I just saw it on Insta.
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contact-page" class="flex">
+		<h3>Contact Me</h3>
+		<p>So if you want to contact me you can fill up this form and give me your details so that I can further contact you.</p>
+		<div class="form-container">
+			<form id="form" action="submit.html">
+				<div class="break-wrap">
+					<label for="name" id="name-text">Your Name</label>
+					<input type="text" id="name" placeholder = 'Enter your name' required>
+				</div>
+
+				<div class="break-wrap">
+					<label for="email" id="email-text">Your Email</label>
+					<input type="email" name="email" id="email"placeholder ='Enter your email' required>
+				</div>
+
+				<div class="break-wrap">
+					<label for="msg" id="msg-text">Why you want to contact me?</label>
+					<input type="text" id="msg" placeholder = 'Enter your message' required>
+				</div>
+
+				<input type="submit" id="submit" value="Submit Form"></input>
+		</form>
+	</section>
+
+	<footer>
+		<div class="container grid">
+			<div class="rights">
+				<h2>Lovish Garg</h2>
+				<p>All rights reserved &copy;2021</p>
+			</div>
+
+			<div class="follow">
+				<nav>
+					<ul>
+						<li><a href="https://github.com/Lovish-Garg" target="_blank"><i class="fab fa-github"></i>Github</a></li>
+
+						<li><a href="https://www.facebook.com"  target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+
+						<li><a href="https://www.discord.com" target="_blank"><i class="fab fa-discord"></i>Discord</a></li>
+
+						<li><a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i>Youtube</a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</footer>
+
+
+	<script src="script.js"></script>
+	<script type="text/javascript" src="vanilla-tilt.js"></script>
+<script type="text/javascript">
+	VanillaTilt.init(document.querySelectorAll(".card"), {
+		max: 25,
+		speed: 400
+	});
+
+</script>
+</body>
+</html>
