@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Survey Form</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div class="info-container">
+		<h1 id="title">Survey For Daily Life</h1>
+		<p id="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia architecto iure voluptates tempora praesentium iusto nostrum accusantium inventore at odio eligendi aspernatur, quo.</p>
+	</div>
+	<form action="" id="survey-form">
+		<div class="break-container">
+			<label for="name" id="name-label">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+		</div>
+
+		<div class="break-container">
+			<label for="email" id="email-label">Email</label>
+			<input type="email" id="email" name="name" placeholder="Example: anything@gmail.com" required>
+		</div>
+
+		<div class="break-container">
+			<input type="radio" id="male" name="gender" value="male">
+			<label for="male">Male</label>
+		</div>
+
+		<div class="break-container">
+			<input type="radio" id="female" name="gender" value="female">
+			<label for="female">Female</label>
+
+		</div>
+
+		<div class="break-container">
+			<input type="radio" id="other" name="gender" value="other">
+			<label for="other">Other</label>
+		</div>
+
+		<div class="break-container">
+			<h2>Which vehicle do you have?</h2>
+			<input type="checkbox" name="bike" value="bike" id="bike">
+			<label for="bike">Bike</label>
+		</div>
+
+		<div class="break-container">
+			<input type="checkbox" name="activa" value="activa" id="activa">
+			<label for="activa">Activa</label>
+
+		</div>
+
+		<div class="break-container">
+			<input type="checkbox" name="car" value="car" id="car">
+			<label for="car">Car</label>
+
+		</div>
+
+		<div class="break-container">
+			<label for="number" id="number-label">Choose a number between 0 and 9</label>
+			<input type="number" id="number" name="name" min="0" max="9" placeholder="1 2 4" required>
+		</div>
+
+		<div class="break-container">
+			<select name="job-status" id="dropdown">
+				<option value="no">Not having Job</option>
+				<option value="have">Having a normal Job</option>
+
+				<option value="great">Having a job at Google</option>
+			</select>
+		</div>
+
+		<div class="break-container">
+			<textarea name="text" id="text">
+
+			</textarea>
+		</div>
+
+		<input type="submit" value="Submit Survey" id="submit">
+	</form>
+</body>
+</html>

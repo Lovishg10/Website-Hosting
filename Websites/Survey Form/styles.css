@@ -1,0 +1,75 @@
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Raleway', sans-serif;
+}
+
+body
+{
+	background: linear-gradient(90deg, #0F2027, #203A43, #2C5364);
+	color: #fff;
+	line-height: 1.2;
+}
+
+h1
+{
+	margin: 1rem;
+	text-align: center;
+}
+
+p
+{
+	text-align: center;
+	font-size: 1.2rem;
+	word-spacing: 6px;
+}
+
+.break-container
+{
+	margin: 1rem 2rem;
+}
+
+form
+{
+}
+
+input
+{
+	margin: 1rem 0;
+	font-size: 1.2rem;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #eee;
+	outline: none;
+	color: #fff;
+}
+
+input[type = 'text'], input[type = 'number'], input[type = 'email']
+{
+	display: block;
+	width: 70%	;
+}
+
+select
+{
+	background-color: transparent;
+	color: #fff;
+}
+
+textarea
+{
+	resize: none;
+	width: 40%;
+	height: 40vh;
+	font-family: sans-serif;
+}
+
+#submit
+{
+	width: 50%;
+	border: 2px solid #fff;
+	margin: auto;
+	display: block;
+}
