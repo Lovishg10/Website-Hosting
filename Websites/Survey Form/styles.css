@@ -8,7 +8,7 @@
 
 body
 {
-	background: url('/C:/Users/lovis/Pictures/Images/background2.jpg') no-repeat fixed;
+	background: url('Images/background2.jpg') no-repeat fixed;
 	background-size: cover;
 	color: #fff;
 	line-height: 1.2;
